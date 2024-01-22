@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Búsqueda por persona
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-text-center">
+    <h1>Registro de pagos por persona</h1>
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-title>
+          Búsqueda por Nombre
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-searchbar [(ngModel)]="nombreABuscar" (ionChange)="buscarPorNombre()"></ion-searchbar>
+
+    <ion-grid>
+        <ion-col>
+          <ion-card>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-label>id</ion-label>
+                </ion-col>
+                <ion-col>
+                  <ion-label>Nombre</ion-label>
+                </ion-col>
+                <ion-col>
+                  <ion-label>Cantidad</ion-label>
+                </ion-col>
+                <ion-col>
+                  <ion-label>Fecha</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row *ngFor="let pago of resultadosBusqueda">
+                <ion-col>{{ pago.split(',')[0] }}</ion-col>
+                <ion-col>{{ pago.split(',')[1] }}</ion-col>
+                <ion-col>{{ pago.split(',')[2] }}</ion-col>
+                <ion-col>{{ pago.split(',')[3] }}</ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+    </ion-grid>
+  </div>
+
+</ion-content>

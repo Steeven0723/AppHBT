@@ -1,0 +1,41 @@
+.ion-text-center{
+    
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* Estilos para la sección 'Registro de pagos por persona' */
+ion-content[fullscreen="true"] {
+    background-color: #f4f4f4; /* Color de fondo del contenido */
+}
+
+h1 {
+    color: #444; /* Color del título h1 */
+}
+
+ion-searchbar {
+    margin-bottom: 20px; /* Añade espacio debajo del ion-searchbar */
+}
+
+/* Estilos para la tabla de resultados */
+ion-card {
+    margin-top: 20px; /* Margen superior para el ion-card */
+}
+
+ion-grid {
+    width: 100%; /* Asegura que el grid ocupe todo el ancho */
+}
+
+ion-label {
+    font-weight: bold; /* Hace que las etiquetas sean más notables */
+    color: #fcfcfc; /* Color del texto de las etiquetas */
+}
+
+ion-row {
+    border-bottom: 1px solid #ccc; /* Agrega un borde inferior a las filas */
+}
+
+ion-col {
+    text-align: center; /* Alinea el texto al centro en las columnas */
+    padding: 10px 0; /* Agrega espaciado alrededor del contenido de las columnas */
+}

@@ -1,0 +1,60 @@
+/* login-styles.scss */
+
+  /* Fondo y estilos generales */
+ion-content.login-content {
+    --background: linear-gradient(to bottom, #3498db, #2980b9); /* Cambia los colores del gradiente según tus preferencias */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Agregamos esta propiedad para el posicionamiento relativo */
+  }
+  
+  /* Contenedor del formulario */
+  .login-form {
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(253, 255, 251, 0.692); /* Cambia la opacidad y color del fondo del formulario según sea necesario */
+    position: absolute; /* Establecemos el posicionamiento absoluto */
+    top: 50%; /* Lo movemos hacia la mitad superior de la pantalla */
+    left: 50%; /* Lo movemos hacia la mitad izquierda de la pantalla */
+    transform: translate(-50%, -50%); /* Centramos vertical y horizontalmente */
+  }
+  
+  /* Títulos y texto */
+  .login-form h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-form .ion-text-center {
+    color: #555;
+  }
+  
+  /* Inputs y botones */
+  ion-item,
+  ion-input,
+  ion-button {
+    margin-bottom: 15px;
+  }
+  
+  ion-item {
+    --highlight-height: 0; /* Elimina el efecto de resaltado al seleccionar el campo */
+  }
+  
+  ion-button {
+    --background: #2ecc71; /* Cambia el color de fondo del botón */
+    --color: #fff; /* Cambia el color del texto del botón */
+    --border-radius: 25px; /* Cambia el radio del borde del botón */
+    --box-shadow: none; /* Elimina la sombra del botón si es necesario */
+  }
+  
+  /* Mensaje de error */
+  .error-message {
+    color: #e74c3c; /* Cambia el color del mensaje de error */
+  }
+  

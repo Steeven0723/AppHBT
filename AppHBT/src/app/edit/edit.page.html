@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Editar Registro</ion-title>
+    <ion-button href="tabs" fill="clear" slot="end">Regresar</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-list >
+      <ion-item>
+        <ion-label position="floating">id</ion-label>
+        <ion-input [(ngModel)]="datos.id" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="datos.nombre" type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Cantidad</ion-label>
+        <ion-input [(ngModel)]="datos.cantidad" type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Fecha de Pago</ion-label>
+        <ion-input [(ngModel)]="datos.fechaPago" type="date"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="block" (click)="guardarCambios()">Guardar Cambios</ion-button>
+  </div>
+</ion-content>
