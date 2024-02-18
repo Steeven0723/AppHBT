@@ -113,9 +113,9 @@ export class Tab1Page {
   }
 
   clearFields() {
-    this.nombre; '';
-    this.cantidad; '';
-    this.fechapago; '';
+    this.nombre = '';
+    this.cantidad = '';
+    this.fechapago = '';
   }
 
 
