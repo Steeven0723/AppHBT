@@ -43,6 +43,7 @@ export class Tab1Page {
       await this.fileHandlerService.guardarEnArchivo(datosAGuardar);
       this.mostrarAlerta('Registro De Pago', 'Exitoso.');
 
+
       // Con Base de datos
       // const datoss = new FormData();
       // datoss.append("nombre", this.nombre)
@@ -86,9 +87,7 @@ export class Tab1Page {
     //   });
 
 
-
-
-      this.clearFields();
+    this.clearFields();
     }else {
       this.mostrarAlerta('Error', 'Por favor completa todos los campos.');
     }this.fileHandlerService.datosGuardados.emit();
